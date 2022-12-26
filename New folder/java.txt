@@ -1,0 +1,34 @@
+
+class Student{
+  String name;
+  int age;
+
+   // making the methods or functions
+   public void write(){
+    System.out.println("Student is writing");
+   }
+
+   // making a constructor (non parameterised constructor)
+   Student(){
+    System.out.println("congrates the constructor is called");
+   }
+
+   // writing a function which sets the value of the parameters in a class itself
+   public void set(String name,int age){
+     this.name = name;
+     this.age = age;
+   }
+   
+   // writing a method which prints the value of the parameters
+   pubic void print(){
+    system.out.println(this.name + " " + this.age)
+   }
+}
+
+
+public class OOPS{
+    public static void main(String args[]){
+        Student s1 = new Student();             // making a student s1 dynamically by using a new keyword
+        s1.write();
+    }
+}
